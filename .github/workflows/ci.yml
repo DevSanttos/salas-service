@@ -39,4 +39,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Token automático do GitHub
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}   # O secret que acabou de criar
-        run: mvn -B clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=DevSanttos_salas-service -Dsonar.organization=devsanttos
+        run: mvn -B clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=DevSanttos_salas-service -Dsonar.organization=devsanttos -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml
