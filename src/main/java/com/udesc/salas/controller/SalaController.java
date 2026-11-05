@@ -50,7 +50,6 @@ public class SalaController {
     @DeleteMapping ("/{id}")
     public boolean deletar(@PathVariable Long id) {
         salaService.deletar(id);
-        //validando a identação para teste ttes
         return true;
     }
 }
