@@ -37,6 +37,7 @@ public class SalaController {
         return ResponseEntity.status(HttpStatus.CREATED).body(new SalaResponse(sala));
     }
 
+    // testando o CI
     @PostMapping("/{id}/reservar")
     public SalaResponse reservar(@PathVariable Long id) {
         return new SalaResponse(salaService.reservar(id));
