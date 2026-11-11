@@ -3,6 +3,8 @@ server:
   forward-headers-strategy: framework
 
 spring:
+  profiles:
+    active: dev
   application:
     name: salas-service
   datasource:
